@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./vector.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <script src="src/js/global.js" defer></script>
+    <script src="src/js/detail.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <a href="./index.html" class="logo">
+        <img
+          src="./vector.png"
+          width="140"
+          height="32"
+          alt="masai movies home"
+        />
+      </a>
+
+      <div class="search-box" search-box>
+        <div class="search-wrapper" search-wrapper>
+          <input
+            type="text"
+            name="search"
+            placeholder="Search for movies..."
+            aria-label="search movies"
+            class="search-field"
+            autocomplete="off"
+            search-field
+          />
+
+          <img
+            src="./src/images/search.png"
+            width="24"
+            height="24"
+            alt="search"
+            class="leading-icon"
+          />
+        </div>
+
+        <button class="search-btn" search-toggler>
+          <img
+            src="./src/images/close.png"
+            width="24"
+            height="24"
+            alt="close button box"
+          />
+        </button>
+      </div>
+
+      <button class="search-btn" search-toggler menu-close>
+        <img
+          src="./src/images/search.png"
+          width="24"
+          height="24"
+          alt="open search box"
+        />
+      </button>
+
+      <button class="menu-btn" menu-btn menu-toggle>
+        <img
+          src="./src/images/menu.png"
+          width="24"
+          height="24"
+          class="menu"
+          alt="open menu"
+        />
+
+        <img
+          src="./src/images/close.png"
+          class="close"
+          width="24"
+          height="24"
+          alt="close menu"
+        />
+      </button>
+    </header>
+
+    <main>
+      <!-- sidebar -->
+
+      <nav class="sidebar" sidebar></nav>
+
+      <div class="overlay" overlay menu-toggler></div>
+
+      <article class="container" page-content>
+        <!-- Movie Detail -->
+
+        <div class="movie-detail">
+          <!-- <div
+          class="backdrop-image"
+          style="background-image: url('./src/images/slider-banner.jpg')"
+        ></div>
+
+        <figure class="poster-box movie-poster">
+          <img src="./src/images/slider-control.jpg" alt="" class="img-cover" />
+        </figure> -->
+
+        <!-- <div class="detail-box">
+
+          <div class="detail-content">
+            <h1 class="heading">Avengers: End Game</h1>
+            <button id="seatBookingBtn">Book Movie</button>
+
+            <div class="meta-list">
+              <div class="meta-item">
+                <img
+                  src="./src/images/star.png"
+                  width="20"
+                  height="20"
+                  alt="rating"
+                />
+
+                <span class="span">8.4</span>
+              </div>
+
+              <div class="seperator"></div>
+
+              <div class="meta-item">162m</div>
+
+              <div class="seperator"></div>
+
+              <div class="meta-item">2022</div>
+
+              <div class="meta-item card-badge">PG-123</div>
+            </div>
+
+            <p class="genre">Animation, Action, Adventure</p>
+
+            <p class="overview">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+              ducimus quod placeat qui magnam iusto iure. Facere veritatis
+              placeat, sapiente fugit repellendus distinctio voluptas corporis
+              perspiciatis omnis dignissimos nesciunt, eaque recusandae harum
+              autem! Eius consequuntur odit hic doloremque, cumque perferendis?
+            </p>
+
+            <ul class="detail-list">
+              <div class="list-item">
+                <p class="list-name">Starring</p>
+
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Dignissimos expedita odio impedit necessitatibus numquam culpa
+                  sed officiis officia rerum quo.
+                </p>
+              </div>
+
+              <div class="list-item">
+                <p class="list-name">Directed By</p>
+
+                <p>Joss Whedon</p>
+              </div>
+            </ul>
+
+
+
+          </div>
+
+
+          <div class="title-wrapper">
+            <h3 class="title-large">Trailer and Clips</h3>
+          </div>
+
+
+          <div class="slider-list">
+            <div class="slider-inner">
+                <div class="video-card"></div>
+
+                <div class="video-card"></div>
+
+                <div class="video-card"></div>
+
+                <div class="video-card"></div>
+            </div>
+          </div>
+
+        </div> -->
+        </div>
+
+        <!-- Movie List -->
+
+        <!-- <section class="movie-list" aria-label="upcoming movie">
+        <div class="title-wrapper">
+          <h3 class="title-large">You May Also Like</h3>
+        </div>
+
+        <div class="slider-list">
+          <div class="slider-inner">
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img
+                  src="./src/images/slider-control.jpg"
+                  alt="puss in boots"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h4 class="title">Avengers: End Game</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./src/images/star.png"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                    class=""
+                  />
+
+                  <span class="span">8.4</span>
+                </div>
+
+                <div class="card-badge">2022</div>
+              </div>
+
+              <a
+                href="./detail.html"
+                class="card-btn"
+                title="Avengers: End Game"
+              ></a>
+            </div>
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img
+                  src="./src/images/slider-control.jpg"
+                  alt="puss in boots"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h4 class="title">Avengers: End Game</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./src/images/star.png"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                    class=""
+                  />
+
+                  <span class="span">8.4</span>
+                </div>
+
+                <div class="card-badge">2022</div>
+              </div>
+
+              <a
+                href="./detail.html"
+                class="card-btn"
+                title="Avengers: End Game"
+              ></a>
+            </div>
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img
+                  src="./src/images/slider-control.jpg"
+                  alt="puss in boots"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h4 class="title">Avengers: End Game</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./src/images/star.png"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                    class=""
+                  />
+
+                  <span class="span">8.4</span>
+                </div>
+
+                <div class="card-badge">2022</div>
+              </div>
+
+              <a
+                href="./detail.html"
+                class="card-btn"
+                title="Avengers: End Game"
+              ></a>
+            </div>
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img
+                  src="./src/images/slider-control.jpg"
+                  alt="puss in boots"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h4 class="title">Avengers: End Game</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./src/images/star.png"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                    class=""
+                  />
+
+                  <span class="span">8.4</span>
+                </div>
+
+                <div class="card-badge">2022</div>
+              </div>
+
+              <a
+                href="./detail.html"
+                class="card-btn"
+                title="Avengers: End Game"
+              ></a>
+            </div>
+
+            <div class="movie-card">
+              <figure class="poster-box card-banner">
+                <img
+                  src="./src/images/slider-control.jpg"
+                  alt="puss in boots"
+                  class="img-cover"
+                />
+              </figure>
+
+              <h4 class="title">Avengers: End Game</h4>
+
+              <div class="meta-list">
+                <div class="meta-item">
+                  <img
+                    src="./src/images/star.png"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    alt=""
+                    class=""
+                  />
+
+                  <span class="span">8.4</span>
+                </div>
+
+                <div class="card-badge">2022</div>
+              </div>
+
+              <a
+                href="./detail.html"
+                class="card-btn"
+                title="Avengers: End Game"
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        
+      </section> -->
+      </article>
+    </main>
+  </body>
+</html>

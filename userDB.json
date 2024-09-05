@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "name": "mark46hdlhsk",
+      "password": "pass@123",
+      "phone": "9999003344",
+      "address": "anime is my world",
+      "id": "1"
+    },
+    {
+      "name": "ataaa",
+      "email": "kk1@gmail.com",
+      "password": "a",
+      "phone": "999",
+      "address": "udh",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Syed Taqi",
+      "email": "thesyed@gmail.com",
+      "password": "newpass",
+      "phone": "8989891111",
+      "address": "beed, Maharashtra."
+    },
+    {
+      "id": "4",
+      "name": "Taqi syed",
+      "email": "thesyed@gmail.com",
+      "password": "",
+      "phone": "9494942020",
+      "address": "beed, Maharashtra"
+    },
+    {
+      "id": "5",
+      "name": "stark",
+      "email": "st@gmail.com",
+      "password": "mark46",
+      "phone": "9090908989",
+      "address": "stark industries"
+    },
+    {
+      "id": "6",
+      "name": "mark42",
+      "email": "themark@gmail.com",
+      "password": "123123",
+      "phone": "9090900909",
+      "address": "stak industries"
+    },
+    {
+      "id": "7",
+      "name": "king of asguard",
+      "email": "thethor@gmail.com",
+      "password": "thunder@thor",
+      "phone": "1122334455",
+      "address": "AsGuardians of the universe "
+    },
+    {
+      "id": "8",
+      "name": "asdf ",
+      "email": "asdf@gmail.com",
+      "password": "321321",
+      "phone": "123123123",
+      "address": "nowhere"
+    }
+  ]
+}
